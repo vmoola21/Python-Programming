@@ -9,3 +9,19 @@ def divide(numerator,denominator):
 numerator=int(input("Enter the numerator value:-"))
 denominator=int(input("Enter the denominator value:-"))
 print(divide(numerator,denominator))
+
+
+import math
+def sqroot(number1):
+    try:
+        result = math.sqrt(number1)
+        print(result)
+        print(f"result:{result}")
+        return result
+    except ValueError:
+        print("Error: Invalid input! Please enter a positive integer or a float value.")
+        return None
+# Test case
+number1=int(input("Enter the number:"))
+
+print(f"Squareroot of {number1} is: {sqroot(number1)}") 
